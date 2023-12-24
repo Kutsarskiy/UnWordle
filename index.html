@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnWordle</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a1fcdb256a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header-background"></div>
+  <header class="header">
+    <a href="#" class="logo">UNWORDLE</a>
+    <nav class="navbar">
+      <a href="#" id="darkThemeToggle"><i class="fa-solid fa-circle-half-stroke fa-2xl"></i></a>
+      <a href="#"><i class="fa-regular fa-circle-question fa-2xl"></i></a>
+      <a href="https://github.com/Kutsarskiy" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+      <a href="https://www.linkedin.com/in/kutsarskiy/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="slider">
+      <label for="fader"><center>Кількість спроб</center></label>
+      <input type="range" min="1" max="10" value="6" id="fader" step="1" list="volsettings">
+      <datalist id="volsettings">
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+        <option>7</option><option>8</option><option>9</option><option>10</option>
+      </datalist>
+    </div>
+    <div class="slider2">
+      <label for="fader2"><center>Кількість літер</center></label>
+      <input type="range" min="1" max="10" value="5" id="fader2" step="1" list="volsettings2">
+      <datalist id="volsettings2">
+        <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+        <option>7</option><option>8</option><option>9</option><option>10</option>
+      </datalist>
+    </div>
+    <button class="button" id="openWordleButton">Почати гру</button>
+  </div>
+  <div id="popup">
+    <div id="popup-content">
+      <span id="close-popup">&times;</span>
+      <p>
+        <strong>Як грати?</strong><hr><br>
+        Вгадайте слово за встановлену кількість спроб<br><br>
+        На відміну від класичної гри, UnWordle має широкий спектр кастомізації: ви можете обрати як кількість літер у слові, так і кількість спроб, аби його вгадати<br><br>
+        <img class="examples" src="images/grey.png"><br>
+        <span id="grey">Сірі літери</span> позначають, що їх немає в загаданому слові<br><br>
+        <img class="examples" src="images/yellow.png"><br>
+        <span id="yellow">Жовті літери</span> позначають, що вони є в загаданому слові, але розташовані там у іншому місці<br><br>
+        <img class="examples" src="images/green.png"><br>
+        <span id="green">Зелені літери</span> позначають, що вони є в загаданому слові і розташовані там на своєму місці<br><br>
+        Не вгадали? Не страшно! У нашій грі вам не обов’язково чекати наступної доби, аби спробувати ще раз. Ми піклуємося про наших гравців, і 
+        намагаємося постійно оновлювати списки доступних слів, аби гра ставала тільки цікавішою<br><br>
+        &copy; 2023 UnWordle. Усі права захищено.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnWordle</title>
+    <link rel="stylesheet" href="unwordle.css">
+    <script src="unwordle.js"></script>
+    <script src="https://kit.fontawesome.com/a1fcdb256a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html"><i class="fa-solid fa-reply fa-xl"></i></a>
+            <a href="#" id="reloadButton"><i class="fa-solid fa-rotate-right fa-xl"></i></a>
+        </div>
+        <div class="navbar-right">
+            <a href="#" id="darkThemeToggle"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></a>
+            <a href="#"><i class="fa-regular fa-circle-question fa-xl"></i></a>
+            <a href="https://github.com/Kutsarskiy" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/kutsarskiy/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <button class="button" role="button">Список слів</button>
+            <div id="popupWordsList">
+                <div id="popup-content">
+                    <span id="close-popup-words-list">&times;</span>
+                    <p>
+                        <strong>Список доступних слів</strong><hr>
+                        <div id="wordList-content"> 
+                        </div>
+                        <span id="copyright">&copy; 2023 UnWordle. Усі права захищено.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 id="title">UnWordle</h1>
+    <hr>
+    <br>
+    <div id="board">
+    </div>
+    <div id="result"></div>
+    <h1 id="answer"></h1>
+    <p id="definition"></p>
+    <div id="popup">
+        <div id="popup-content">
+            <span id="close-popup">&times;</span>
+            <p>
+                <strong>Як грати?</strong><hr><br>
+                Вгадайте слово за встановлену кількість спроб<br><br>
+                На відміну від класичної гри, UnWordle має широкий спектр кастомізації: ви можете обрати як кількість літер у слові, так і кількість спроб, аби його вгадати<br><br>
+                <img class="examples" src="images/grey.png"><br>
+                <span id="grey">Сірі літери</span> позначають, що їх немає в загаданому слові<br><br>
+                <img class="examples" src="images/yellow.png"><br>
+                <span id="yellow">Жовті літери</span> позначають, що вони є в загаданому слові, але розташовані там у іншому місці<br><br>
+                <img class="examples" src="images/green.png"><br>
+                <span id="green">Зелені літери</span> позначають, що вони є в загаданому слові і розташовані там на своєму місці<br><br>
+                Не вгадали? Не страшно! У нашій грі вам не обов’язково чекати наступної доби, аби спробувати ще раз. Ми піклуємося про наших гравців, і 
+                намагаємося постійно оновлювати списки доступних слів, аби гра ставала тільки цікавішою
+                <span id="copyright">&copy; 2023 UnWordle. Усі права захищено.</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
